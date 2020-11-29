@@ -18,8 +18,8 @@ class BusinessHome {
   inputs = () => {
     return new Promise((resolve, reject) => {
       readLine.question("Number of Players ", (players) => {
-        if (isNaN(parseInt(players, 10))) {
-          reject("Please enter number");
+        if (isNaN(parseInt(players, 10)) || parseInt(players, 10) < 2) {
+          reject("Please enter min number 2 or more");
         } else {
           this.totalPlayers = parseInt(players, 10);
         }

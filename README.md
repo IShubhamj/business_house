@@ -10,9 +10,9 @@ Business House / Monopoly
 ```
 ## additional scripts ##
 ```shell
-npm run build   // it will create optimized build "dist".
-npm run lint  // it will lint and show tslint errors.
-npm run fix:fix // it will fix all aut fixable erros.
+npm run build     // it will create optimized build "dist".
+npm run lint      // it will lint and show tslint errors.
+npm run fix:fix   // it will fix all aut fixable erros.
 ```
 Thanks..
 Happy Coding !

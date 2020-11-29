@@ -68,13 +68,11 @@ class BusinessHome {
         case "E":
           return {
             type: "Empty",
-            operation: null,
             value: null,
           };
         case "J":
           return {
             type: "Jail",
-            operation: "debit",
             value: 150,
           };
         case "H":

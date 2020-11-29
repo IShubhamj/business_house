@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "allowJs": true /* Allow javascript files to be compiled. */,
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "checkJs": false /* Report errors in .js files. */,
+      "esModuleInterop": false,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "outDir": "./dist",
+      "skipLibCheck": true,
+      "paths": {
+        "*": ["node_modules/*", "src/types/*"]
+      },
+      "sourceMap": true,
+      "target": "ES2016",
+    },
+    "exclude": ["dist", "node_modules", "node_modules/@types", "**/*.spec.ts", "**/*xxx*"],
+    "include": [
+      "src",
+    ],
+    "types": ["src/types"]
+  }
+  

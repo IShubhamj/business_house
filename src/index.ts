@@ -31,6 +31,9 @@ class BusinessHome {
             reject("Valid cell types are E, T, H, J");
           });
           readLine.question("Dice outputs ", (diceOutputs) => {
+             if(diceOutputs.split(',').length !== (this.totalPlayers*this.totalChances)) {
+              reject('This game is of 10 chances to get fare chances to every player you need to enter total players * 10 chances')
+             }
             this.diceOutputs = diceOutputs.split(",").map((element) => {
               if (
                 isNaN(parseInt(element, 10)) ||
@@ -128,6 +131,9 @@ class BusinessHome {
             }
         }
         dice++;
+        //  uncomment below colsoles to check round player details and cell details
+        // console.log(`round ${round}, player ${player.name}`);
+        // console.log(activeCell, {balance: player.balance, hotelsOwned: player.hotelsOwned})
       }
       round++;
     } while (dice < this.diceOutputs.length);
